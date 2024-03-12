@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="donation.css">
+  <title>Donor Dashboard - Food Management System</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <!-- Replace [Your Username] with the actual username retrieved from the backend -->
+  </header>
+
+  <section class="donation-history">
+    <h2>Donation History</h2>
+    <!-- Add content related to donation history -->
+  </section>
+
+  <section class="donation-form">
+    <h2>Make a Donation</h2>
+    <form id="donationForm" onsubmit="makeDonation(event)">
+      <label for="foodType">Type of Food:</label>
+      <input type="text" id="foodType" name="foodType" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <button type="submit">Donate</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Food Management System</p>
+  </footer>
+
+  <script src="donation.js"></script>
+</body>
+
+</html>
